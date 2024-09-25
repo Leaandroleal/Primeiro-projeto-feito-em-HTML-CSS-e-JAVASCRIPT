@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="TrabalhoPt2.js"></script>
+    <link rel="stylesheet" href="clinica.css">
+    <title>Agendamento</title>
+</head>
+<body>
+    <h1>Serviços Oferecidos</h1>
+        <table border="1">
+        <thead>
+            <tr>
+                <th>Serviço</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Consultas</td>
+                <td>R$60,00</td>
+            </tr>
+            <tr>
+                <td>Exames</td>
+                <td>R$60,00</td>
+            </tr>
+            <tr>
+                <td>Cirurgias</td>
+                <td>R$200,00</td>
+            </tr>
+            <tr>
+                <td>Vacinação e Vermifugação</td>
+                <td>R$50,00</td>
+            </tr>
+            <tr>
+                <td>Emergências</td>
+                <td>R$80,00</td>
+            </tr>
+            <tr>
+                <td>Nutrição e Bem-Estar</td>
+                <td>R$100,00</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <form id="recarregar">
+        NOME DO TUTOR: <input type="nome">
+        <br>
+        <br>
+        NOME DO ANIMAL: <input type="nome">
+        <br>
+        <br>
+        ESPECIE: <select id="ESPECIE">
+                    <option value=""></option>
+                    <option value="1">Cachorro</option>
+                    <option value="2">Gato</option>
+                </select>
+        <BR>
+        <br>       
+        SEXO DO PET: <select id="SEXO DO PET">
+                    <option value=""></option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Feminino</option>
+                </select>
+        <br>
+        <br>        
+        IDADE: <input type="number" name="IDADE" min="0" max="20" > 
+        <br>
+        <br>
+        TELEFONE DE CONTATO: <input type="tel" name="TELEFONE">
+        <br>
+        <br>
+        SERVIÇOS: <select id="SERVIÇOS">
+            <option value=""></option>
+            <option value="1">Consultas</option>
+            <option value="2">Exames</option>
+            <option value="2">Cirurgias</option>
+            <option value="2">Vacinação e Vermifugação</option>
+            <option value="2">Emergências</option>
+            <option value="2">Nutrição e Bem-Estar</option>
+        </select> 
+        <br>
+        <br> 
+        DATA E HORA <input type="datetime-local" id="Data e HORA">
+        <br>
+        <br>
+               
+    </form>
+        <Button type="submit" id="Enviar">Enviar</Button>
+        <button id="TemaClaro">Tema Claro</button>
+        <button id="TemaEscuro">Tema Escuro</button>
+       
+        
+</body>
+</html>
